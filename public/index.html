@@ -1364,8 +1364,9 @@
                 // Aviso antes de abrir PDF
                 alert('Seu PDF está abrindo. Como é um arquivo grande, pode levar alguns segundos para carregar na tela. Obrigado pela paciência! 📄');
 
-                // Abrir PDF no navegador (funciona em mobile e desktop)
-                const pdfUrl = 'https://drive.google.com/file/d/1r8e1PGHGtoWBfQCrYXqd9LH5w1bLmR3y/view?usp=sharing';
+                // Abrir PDF no navegador com cache-buster para evitar bloqueios
+                const timestamp = new Date().getTime();
+                const pdfUrl = `https://drive.google.com/file/d/1r8e1PGHGtoWBfQCrYXqd9LH5w1bLmR3y/view?usp=sharing&v=${timestamp}`;
                 window.open(pdfUrl, '_blank');
 
                 closeModal();
