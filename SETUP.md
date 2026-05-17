@@ -30,7 +30,7 @@ Edite o arquivo `wrangler.jsonc` e procure por:
 "name": "kpg-gramado-lp"
 ```
 
-**NÃO PRECISA MUDAR** - o Wrangler já está configurado para o subdomínio `gramado.kpgimoveis.com.br`
+**NÃO PRECISA MUDAR** - o Wrangler já está configurado para o domínio `kpgimoveis.blog.br`
 
 ---
 
@@ -64,7 +64,7 @@ npm run deploy
 
 Após o deploy bem-sucedido:
 
-1. Acesse: https://gramado.kpgimoveis.com.br/
+1. Acesse: https://www.kpgimoveis.blog.br/
 2. Verifique se a página carrega corretamente
 3. Teste o botão de WhatsApp (quando implementado)
 
@@ -133,6 +133,7 @@ Verifique:
 
 ---
 
-**Última atualização:** 12/05/2026  
+**Última atualização:** 15/05/2026  
 **Desenvolvedor:** Claude Code  
-**Projeto:** KPG Imóveis - Gramado LP
+**Projeto:** KPG Imóveis - Landing Page  
+**Domínio:** https://www.kpgimoveis.blog.br

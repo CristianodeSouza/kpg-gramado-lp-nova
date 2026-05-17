@@ -6,6 +6,16 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "kpg-gramado-lp",
 	"main": "src/index.ts",
+	"routes": [
+		{
+			"pattern": "kpgimoveis.blog.br/*",
+			"zone_name": "kpgimoveis.blog.br"
+		},
+		{
+			"pattern": "www.kpgimoveis.blog.br/*",
+			"zone_name": "kpgimoveis.blog.br"
+		}
+	],
 	"compatibility_date": "2026-05-12",
 	"compatibility_flags": [
 		"nodejs_compat",
