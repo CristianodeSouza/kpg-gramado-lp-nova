@@ -1361,7 +1361,15 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             }).then(() => {
-                alert('Pronto. Seu material está a caminho do email.');
+                // Download automático do PDF
+                const link = document.createElement('a');
+                link.href = '/book_kpg_curadoria.pdf';
+                link.download = 'book_kpg_curadoria.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                alert('Pronto! Seu PDF está sendo baixado e também será enviado para o email.');
                 closeModal();
                 e.target.reset();
             }).catch(() => {
